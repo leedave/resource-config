@@ -9,7 +9,7 @@ namespace Leedch\Config;
 class Update 
 {
     protected static $targetConfigFolder = "configs/";
-    protected static $sourceConfigFolder = __DIR__ . "/../../../updates/configs/";
+    protected static $sourceConfigFolder = __DIR__ . "/../../../../updates/configs/";
     
     public function createConfigs() {
         $arrSourceFiles = self::findNewFiles();
