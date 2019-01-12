@@ -1,0 +1,45 @@
+{
+    "name": "leedch/resource-config",
+    "type": "library",
+    "description": "Script that interactivly creates Config Files",
+    "keywords": [
+        "leedch",
+        "config",
+        "phpunit",
+        "abstract",
+        "model"
+    ],
+    "homepage": "https://github.com/leedave/resource-config.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Lee",
+            "email": "leed@leed.ch",
+            "homepage": "https://www.leed.ch/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.0|~7.1|~7.2",
+        "leedch/logger": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leedch\\Config\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leedch\\Config\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
